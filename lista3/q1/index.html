@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    button {
+    background-color: #f18324;
+    border: none;
+    border-radius: 5px;
+    color:#fff;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.grid {
+    display: grid;
+    font-family: monospace;
+    grid-template-columns: repeat(4, 1fr); /* Três colunas igualmente espaçadas */
+    gap: 10px; /* Espaçamento entre as fotos */
+    max-width: 1200px; /* Largura máxima da grade */
+    margin: 0 auto; /* Centraliza a grade horizontalmente */
+    padding: 20px; /* Espaçamento ao redor da grade */
+  }
+
+.grid div {
+    box-sizing: border-box;
+    margin: 0 0;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    padding: 5px 0px;
+    box-sizing: border-box; 
+    transition: background-image 0.3s ease-in-out;
+}
+
+input {
+    width: 34%;
+    flex: 1;
+    margin: 5px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none ;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th{
+padding: 10px 15px;
+border: 1px solid #ddd;
+text-align: center;
+}
+
+td {
+    color: #333;
+    font-weight: 600;
+}
+
+tr:nth-child(even) {
+    background-color: #f5f5f5;
+}
+
+
+* {
+    margin: 0;
+    padding: 10px;
+    box-sizing: border-box;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+ 
+body {
+    font-size: 13px;
+    font-weight: 400;
+    font-family: monospace;
+    margin: 0 0;
+    color: #ffffff;
+    background: linear-gradient(to right, #010e1f, #010e1f);
+    background-size: cover;
+    background-size: cover;
+}
+  
+h1 {
+    font-family: monospace;
+    width: 50%;
+    margin: 10px 400px;
+    text-align: center;
+    border-top:5px solid #ffffff;
+    background: linear-gradient(to left, #f18324, #f18324);
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat; 
+    padding: 20px; 
+    color: #0d2226;
+}
+  
+h2 {
+    text-align: center;
+    color: #d2d0e6;
+    margin: 25px 25px;
+    opacity: 0.7;
+    font-size: 20px;
+    font-weight: 600;
+} 
+
+h3 {
+  color: #f18324;
+}
+
+  footer {
+      color: white;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      margin-bottom: 0px;
+      margin-top: 0px;
+    }
+    
+    
+    .footer-top-wrapper {
+      font-size: 10px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 48px;
+      margin: 0 auto;
+      padding: 1px;
+      min-height: 160px;
+  }
+  
+  .footer-top-wrapper > section {
+      width: 100%;
+  }
+  
+  footer h2 {
+      text-align: center;
+      color: #d2d0e6;
+      margin-top: 0px;
+      margin-bottom: 0px;
+      opacity: 0.7;
+      font-size: 10px;
+      font-weight: 600;
+  }
+  
+  
+  nav {
+    font-family: monospace;
+    font: bold;
+    font-size: larger;
+    display: flex;
+    justify-content: center;
+    padding: 0px;
+    background-color: #ffffff;
+    box-sizing: border-box;
+  }
+  
+  nav ul {
+    list-style-type:none ;
+    margin-left: 10px;
+    padding: 1px;
+  }
+  
+  nav li {
+    display: inline-block;
+    margin-right: 15px;
+  }
+  
+  nav li a {
+    color: #000000;
+    text-decoration: none;
+  }
+  
+  nav li span {
+    font-size: small;
+  }
+  
+  nav li a:hover {
+    text-decoration: none;
+    color:#f18324;
+  }
+  
+  @media screen and (max-width: 820px) {
+  
+    h1 {
+      width: 100%;
+      margin: 0 0;
+    }
+    aside {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      flex-direction: column;
+      width: 100%;
+    }
+    #img {
+    width: 100%;
+    height: auto;
+    margin: 10px 0px;
+  }
+  }
+  
+</style>
+<body>
+    <h1>Lista de Tarefas</h1>
+    <label for="text">Defina a Tarefa:</label>
+    <input type="text" name="" id="evento">
+    <label for="datetime-local"> Defina o horario:</label>
+    <input type="datetime-local" name="" id="date">
+    
+    <button>Adicionar</button>
+    
+    <ol></ol>
+    
+    <script src="script.js"></script>
+</body>
+</html>
